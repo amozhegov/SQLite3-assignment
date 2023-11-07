@@ -1,6 +1,8 @@
 # SQLite3-assignment
 
 -- Таблица "Nomenclature" для хранения информации о номенклатуре товаров
+
+
 CREATE TABLE Nomenclature (
     nomenclature_id INTEGER PRIMARY KEY,
     name TEXT,
