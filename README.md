@@ -4,10 +4,15 @@
 
 
 CREATE TABLE Nomenclature (
+
     nomenclature_id INTEGER PRIMARY KEY,
+
     name TEXT,
+    
     quantity INTEGER,
+    
     price REAL
+    
 );
 
 -- Таблица "Clients" для хранения информации о клиентах
