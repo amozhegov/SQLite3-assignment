@@ -3,7 +3,7 @@
 -- Таблица "Nomenclature" для хранения информации о номенклатуре товаров
 
 
-'''
+```
 CREATE TABLE Nomenclature (
 
     nomenclature_id INTEGER PRIMARY KEY,
@@ -15,7 +15,7 @@ CREATE TABLE Nomenclature (
     price REAL
     
 );
-'''
+```
 
 -- Таблица "Clients" для хранения информации о клиентах
 
