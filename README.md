@@ -11,6 +11,8 @@ CREATE TABLE Nomenclature (
 );
 
 -- Таблица "Clients" для хранения информации о клиентах
+
+
 CREATE TABLE Clients (
     client_id INTEGER PRIMARY KEY,
     client_name TEXT,
@@ -18,6 +20,7 @@ CREATE TABLE Clients (
 );
 
 -- Таблица "Orders" для хранения информации о заказах клиентов
+
 CREATE TABLE Orders (
     order_id INTEGER PRIMARY KEY,
     client_id INTEGER,
@@ -25,6 +28,7 @@ CREATE TABLE Orders (
 );
 
 -- Таблица "OrderDetails" для хранения информации о деталях заказов
+
 CREATE TABLE OrderDetails (
     order_id INTEGER,
     nomenclature_id INTEGER,
@@ -34,12 +38,14 @@ CREATE TABLE OrderDetails (
 );
 
 -- Таблица "Category" для хранения категорий номенклатуры
+
 CREATE TABLE Category (
     category_id INTEGER PRIMARY KEY,
     category_name TEXT
 );
 
 -- Таблица "Subcategory" для хранения подкатегорий товаров с ссылкой на категорию
+
 CREATE TABLE Subcategory (
     subcategory_id INTEGER PRIMARY KEY,
     category_id INTEGER,
@@ -48,6 +54,7 @@ CREATE TABLE Subcategory (
 );
 
 -- Таблица "Types" для хранения типов товаров с ссылкой на подкатегорию
+
 CREATE TABLE Types (
     type_id INTEGER PRIMARY KEY,
     subcategory_id INTEGER,
