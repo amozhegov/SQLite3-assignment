@@ -76,3 +76,17 @@ FROM Subcategory
 LEFT JOIN Type ON Subcategory.subcategory_id = Type.subcategory_id
 GROUP BY Subcategory.subcategory_name;
 ```
+Запрос на получение сумм заказов по клиентам:
+```
+SELECT
+    Clients.client_name AS client_name,
+    SUM(OrderDetails.quantity) AS total_order_amount
+FROM
+    Clients
+JOIN
+    Orders ON Clients.client_id = Orders.client_id
+JOIN
+    OrderDetails ON Orders.order_id = OrderDetails.order_id
+GROUP BY
+    Clients.client_id;
+```
