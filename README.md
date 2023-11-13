@@ -1,5 +1,8 @@
 # SQLite3-assignment
 
+![schema](https://github.com/amozhegov/SQLite3-assignment/assets/136026020/72bbbc52-0a79-4631-9226-12f61000ac8a)
+
+
 -- Таблица "Nomenclature" для хранения информации о номенклатуре товаров
 ```
 CREATE TABLE Nomenclature (
